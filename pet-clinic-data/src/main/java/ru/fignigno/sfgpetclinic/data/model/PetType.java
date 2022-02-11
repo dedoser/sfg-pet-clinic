@@ -1,4 +1,4 @@
-package ru.fignigno.sfgpetclinic.model;
+package ru.fignigno.sfgpetclinic.data.model;
 
 public class PetType {
 
