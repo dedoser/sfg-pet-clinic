@@ -1,10 +1,12 @@
 package ru.fignigno.sfgpetclinic.data.services.map;
 
+import org.springframework.stereotype.Service;
 import ru.fignigno.sfgpetclinic.data.model.Owner;
 import ru.fignigno.sfgpetclinic.data.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {

@@ -6,19 +6,17 @@ import ru.fignigno.sfgpetclinic.data.model.Owner;
 import ru.fignigno.sfgpetclinic.data.model.Vet;
 import ru.fignigno.sfgpetclinic.data.services.OwnerService;
 import ru.fignigno.sfgpetclinic.data.services.VetService;
-import ru.fignigno.sfgpetclinic.data.services.map.OwnerServiceMap;
-import ru.fignigno.sfgpetclinic.data.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
-
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
-   }
+    
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
+    }
 
     @Override
     public void run(String... args) throws Exception {
