@@ -2,10 +2,11 @@ package ru.fignigno.sfgpetclinic.data.services.map;
 
 import ru.fignigno.sfgpetclinic.data.model.Pet;
 import ru.fignigno.sfgpetclinic.data.services.CrudService;
+import ru.fignigno.sfgpetclinic.data.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();

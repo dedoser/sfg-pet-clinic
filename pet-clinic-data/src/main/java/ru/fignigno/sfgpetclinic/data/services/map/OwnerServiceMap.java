@@ -1,11 +1,15 @@
 package ru.fignigno.sfgpetclinic.data.services.map;
 
 import ru.fignigno.sfgpetclinic.data.model.Owner;
-import ru.fignigno.sfgpetclinic.data.services.CrudService;
+import ru.fignigno.sfgpetclinic.data.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 
     @Override
     public Set<Owner> findAll() {
