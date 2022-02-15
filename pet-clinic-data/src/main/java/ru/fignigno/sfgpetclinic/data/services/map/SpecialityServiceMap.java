@@ -1,10 +1,12 @@
 package ru.fignigno.sfgpetclinic.data.services.map;
 
+import org.springframework.stereotype.Service;
 import ru.fignigno.sfgpetclinic.data.model.Speciality;
 import ru.fignigno.sfgpetclinic.data.services.SpecialityService;
 
 import java.util.Set;
 
+@Service
 public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialityService {
     @Override
     public Set<Speciality> findAll() {
